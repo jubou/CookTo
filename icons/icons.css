@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?r3c8l2');
+  src:  url('fonts/icomoon.eot?r3c8l2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?r3c8l2') format('truetype'),
+    url('fonts/icomoon.woff?r3c8l2') format('woff'),
+    url('fonts/icomoon.svg?r3c8l2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-food-covered:before {
+  content: "\e901";
+}
+.icon-slideshare-logotype:before {
+  content: "\e902";
+}
+.icon-study:before {
+  content: "\e900";
+}
