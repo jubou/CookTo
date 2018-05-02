@@ -16,14 +16,23 @@ html {
 
 header#header {
     background-color: $amarillo;
-    padding: 20px 30px;
+    padding: 20px 50px;
     div.logo {
-        width: 20%;
+        padding-left: 3vmax;
         img {
             height: 10vmin;
         }
     }
+    button {
+        span {
+            color: $marron;
+            font-size: 3rem;
+            font-weight: bold;
+            outline: none;
+        }
+    }
     nav#navegacion {
+        background-color: $amarillo;
         // display: flex;
         // justify-content: center;
         // align-items: center;
@@ -32,27 +41,32 @@ header#header {
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-size: 1.3rem;
         }
         span {
             font-size: 3rem;
         }
-        .navbar-nav {
+        div.navbar-nav {
+            width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            div {
+            padding-left:3vmax;
+            div a {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
             }
+            &>a {
+                color: $amarillo;
+                display: inline-block;
+                background-color: $marron;
+                padding: 10px 30px;
+                border-radius: 20px;
+            }
         }
     }
-}
-
-nav {
-    width: 100%;
-    background-color: $amarillo;
 }
 
 footer {
