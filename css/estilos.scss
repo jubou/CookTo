@@ -71,6 +71,16 @@ header#header {
     }
 }
 
+section#banner{
+    width: 100%;
+    height: calc(100vh - 135px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/home-banner.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
 footer {
     background-color: $amarillo;
 }
@@ -97,7 +107,7 @@ footer {
         padding: 20px 20px;
         nav#navegacion {
             div.navbar-nav {
-                flex-direction:column;
+                flex-direction: column;
                 padding: 20px 0;
                 div {
                     margin-bottom: 20px;

@@ -53,6 +53,15 @@ header#header {
         padding: 10px 30px;
         border-radius: 20px; }
 
+section#banner {
+  width: 100%;
+  height: calc(100vh - 135px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/home-banner.jpg) center center fixed no-repeat;
+  background-size: cover; }
+
 footer {
   background-color: #eeb641; }
 
