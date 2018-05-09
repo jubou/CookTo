@@ -17,11 +17,14 @@ header#header {
     padding-left: 3vmax; }
     header#header div.logo img {
       height: 10vmin; }
-  header#header button span {
-    color: #3a3028;
-    font-size: 3rem;
-    font-weight: bold;
+  header#header button {
     outline: none; }
+    header#header button span {
+      color: #3a3028;
+      font-size: 5vmin;
+      font-weight: 100; }
+      header#header button span:focus {
+        outline: #3a3028; }
   header#header nav#navegacion {
     background-color: #eeb641; }
     header#header nav#navegacion a {
@@ -54,5 +57,23 @@ footer {
   background-color: #eeb641; }
 
 /* MEDIA QUERIES */
+/* MEDIUM */
+@media only screen and (max-width: 991px) {
+  header#header nav#navegacion div.navbar-nav {
+    padding: 20px 0;
+    flex-direction: row; } }
+/* SMALL */
+@media only screen and (max-width: 767px) {
+  header#header {
+    padding: 20px 20px; }
+    header#header nav#navegacion div.navbar-nav {
+      flex-direction: column;
+      padding: 20px 0; }
+      header#header nav#navegacion div.navbar-nav div {
+        margin-bottom: 20px; }
+    header#header div.logo img {
+      height: 7.5vmax; }
+    header#header button span {
+      font-size: 5vmax; } }
 
 /*# sourceMappingURL=estilos.css.map */
