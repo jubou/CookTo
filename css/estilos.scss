@@ -35,9 +35,7 @@ header#header {
         }
     }
     nav#navegacion {
-        background-color: $amarillo; // display: flex;
-        // justify-content: center;
-        // align-items: center;
+        background-color: $amarillo;
         a {
             color: $marron;
             font-weight: 800;
@@ -71,14 +69,29 @@ header#header {
     }
 }
 
-section#banner{
+section#banner {
     width: 100%;
     height: calc(100vh - 135px);
+    background: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.302)), url(../img/banner.jpg) center center fixed no-repeat, ;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/home-banner.jpg) center center fixed no-repeat;
-    background-size: cover;
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            font-size: 5rem;
+            letter-spacing: 5px;
+
+        }
+    }
 }
 
 footer {

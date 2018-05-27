@@ -1,59 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include('funciones.php'); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CookTo - Cocinar para comer, compartir y aprender. Cocina experiencias.</title>
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:500,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="icons/icons.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-
-<body>
-
-<?php
-
-include('funciones.php');
-
-get_header();
-
-?>
-
-    <!-- <header id="header" class="navbar navbar-expand-lg">
-
-        <div class="logo">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logotipo.png" alt="Logo CookTo">
-            </a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacion" aria-controls="navegacion"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-hamburger-menu"></span>
-        </button>
-        <nav class="collapse navbar-collapse" id="navegacion">
-            <div class="navbar-nav">
-                <div class="comer">
-                    <a class="nav-item nav-link" href="#">Comer
-                        <span class="icon-comer"></span>
-                    </a>
-                    
-                </div>
-                <div class="compartir">
-                    <a class="nav-item nav-link" href="#">Compartir<span class="icon-compartir"></span></a>
-                    
-                </div>
-                <div class="aprender">
-                    <a class="nav-item nav-link" href="#">Aprender<span class="icon-aprender"></span></a>
-                    
-                </div>
-                <a class="nav-item nav-link" href="#">Accede</a>
-            </div>
-        </nav>
-    </header> -->
+    <?php get_header('CookTo - Cocinar para comer, compartir y aprender sobre comida', 'Plataforma que tiene el fin de conectar personas a través de la cocina con tres objetivos muy claros: Comer, compartir y aprender.'); ?>
 
     <section id="banner" class="container-fluid">
         <div class="row">
@@ -144,24 +91,7 @@ get_header();
         </article>
     </section>
 
-    <footer id="footer" class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <p>&copy; 2018- 2019 COOKTO. Todos los derechos reservados.</p>
-            </div>
-            <div class="redes-sociales">
-                <a href="">
-                    <span class="icon-facebook"></span>
-                </a>
-                <a href="">
-                    <span class="icon-twitter"></span>
-                </a>
-                <a href="">
-                    <span class="icon-instagram"></span>
-                </a>
-            </div>
-        </div>
-    </footer>
+   <?php get_footer(); ?>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
