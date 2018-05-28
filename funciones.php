@@ -4,7 +4,7 @@ function get_header($titulo, $descripcion)
 {
         echo '
     <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
