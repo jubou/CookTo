@@ -76,7 +76,8 @@ section#banner {
       color: white;
       text-shadow: 2px 2px 2px black;
       font-size: 5rem;
-      letter-spacing: 5px; }
+      letter-spacing: 5px;
+      text-align: center; }
     section#banner .row h2 {
       color: white;
       text-shadow: 2px 2px 2px black;
@@ -149,7 +150,10 @@ section#que-es-cookto {
         font-weight: 500;
         font-size: 1.3rem;
         text-align: justify;
-        text-justify: inter-word; }
+        text-justify: inter-word;
+        margin-bottom: 30px; }
+        section#que-es-cookto article .descripcion p:nth-child(4) {
+          margin-bottom: 0; }
         section#que-es-cookto article .descripcion p span {
           font-weight: 800;
           text-transform: uppercase; }
@@ -172,7 +176,8 @@ section#comer {
   section#comer article {
     align-items: center; }
     section#comer article .descripcion {
-      color: #3a3028; }
+      color: #3a3028;
+      padding-left: 50px; }
       section#comer article .descripcion h2 {
         text-transform: uppercase;
         font-weight: 800;
@@ -184,10 +189,12 @@ section#comer {
         font-weight: 500;
         font-size: 1.3rem;
         text-align: justify;
-        text-justify: inter-word; }
+        text-justify: inter-word;
+        margin-bottom: 30px; }
+        section#comer article .descripcion p:nth-child(3) {
+          margin-bottom: 0; }
         section#comer article .descripcion p span {
-          font-weight: 800;
-          text-transform: uppercase; }
+          font-weight: 800; }
     section#comer article .imagen {
       display: flex;
       justify-content: center;
@@ -220,10 +227,11 @@ section#compartir {
         font-weight: 500;
         font-size: 1.3rem;
         text-align: justify;
-        text-justify: inter-word; }
+        margin-bottom: 30px; }
+        section#compartir article .descripcion p:nth-child(3) {
+          margin-bottom: 0; }
         section#compartir article .descripcion p span {
-          font-weight: 800;
-          text-transform: uppercase; }
+          font-weight: 800; }
     section#compartir article .imagen {
       display: flex;
       justify-content: center;
@@ -255,10 +263,12 @@ section#aprender {
         width: 80%;
         font-weight: 500;
         font-size: 1.3rem;
-        text-align: justify; }
+        text-align: justify;
+        margin-bottom: 30px; }
+        section#aprender article .descripcion p:nth-child(3) {
+          margin-bottom: 0; }
         section#aprender article .descripcion p span {
-          font-weight: 800;
-          text-transform: uppercase; }
+          font-weight: 800; }
     section#aprender article .imagen {
       display: flex;
       justify-content: center;
@@ -269,6 +279,44 @@ section#aprender {
         padding: 10px;
         background-color: #eeb641; }
 
+/* MENÚ LATERAL*/
+#menu-lateral {
+  position: fixed;
+  top: 33%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #menu-lateral a {
+    display: none;
+    text-decoration: none;
+    margin-top: 30px; }
+    #menu-lateral a span {
+      font-size: 2.5rem;
+      color: #3a3028;
+      background-color: #eeb641;
+      padding: 10px; }
+
+/* SCROLL TO TOP */
+.go-top {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  text-decoration: none; }
+  .go-top span {
+    background-color: rgba(58, 48, 40, 0.6);
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    color: #eeb641;
+    font-size: 2rem;
+    border-radius: 50%;
+    transition: all 0.2s; }
+    .go-top span:hover {
+      background-color: #3a3028; }
+
 /* FOOTER */
 footer {
   padding: 50px 0;
@@ -277,6 +325,8 @@ footer {
     font-weight: 700;
     text-align: center;
     font-size: 1.5rem; }
+    footer .row p span {
+      font-weight: 800; }
   footer .row .redes-sociales {
     margin-top: 1.5rem;
     display: flex;
@@ -294,16 +344,29 @@ footer {
 /* MEDIA QUERIES */
 /* MEDIUM */
 @media only screen and (max-width: 991px) {
+  /* CABECERA*/
   header#header nav#navegacion div.navbar-nav {
     padding: 20px 0;
     flex-direction: row; }
 
+  /* BUSCADOR*/
   div#buscador {
     width: 50% !important; } }
+/* BANNER */
+section#banner .row h1 {
+  font-size: 4rem; }
+section#banner .row h2 {
+  font-size: 1.5rem; }
+
 /* SMALL */
 @media only screen and (max-width: 767px) {
+  /* CABECERA */
   header#header {
-    padding: 20px 20px; }
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0; }
     header#header nav#navegacion div.navbar-nav {
       flex-direction: column;
       padding: 20px 0; }
@@ -314,8 +377,60 @@ footer {
     header#header button span {
       font-size: 5vmax; }
 
+  /* BUSCADOR */
   div#buscador {
     font-size: 2.7vmin;
-    width: 60% !important; } }
+    width: 60% !important; }
+
+  /* BANNER */
+  section#banner {
+    margin-top: 95px; }
+
+  /* MENÚ LATERAL */
+  #menu-lateral {
+    display: none; }
+
+  /* ¿QUÉ ES COOKTO? */
+  section#que-es-cookto article .descripcion {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 50px; }
+    section#que-es-cookto article .descripcion p {
+      text-align: center;
+      width: 100%;
+      padding: 0 30px; }
+
+  /* COMER */
+  section#comer article .descripcion {
+    text-align: center;
+    margin-bottom: 50px; }
+    section#comer article .descripcion p {
+      text-align: center;
+      width: 100%;
+      padding: 0 30px; }
+
+  /* COMPARTIR */
+  section#compartir article .descripcion {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 50px; }
+    section#compartir article .descripcion p {
+      text-align: center;
+      width: 100%;
+      padding: 0 30px; }
+
+  /* APRENDER*/
+  section#aprender article .descripcion {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-left: 0; }
+    section#aprender article .descripcion p {
+      text-align: center;
+      width: 100%;
+      padding: 0 30px; }
+
+  /* FOOTER */
+  footer .row p {
+    font-size: 1.2rem; } }
 
 /*# sourceMappingURL=estilos.css.map */

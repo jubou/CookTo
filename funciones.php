@@ -62,7 +62,7 @@ function get_footer()
     echo ' <footer id="footer" class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <p>&copy; 2018- 2019 COOKTO. Todos los derechos reservados.</p>
+                <p>&copy; 2018- 2019 <span>COOKTO</span>. Todos los derechos reservados.</p>
             </div>
             <div class="redes-sociales col-12">
                 <a href="">
