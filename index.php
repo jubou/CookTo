@@ -1,7 +1,8 @@
 <?php include('funciones.php'); ?>
-
+    <!-- CABECERA -->
     <?php get_header('CookTo - Cocinar para comer, compartir y aprender sobre comida', 'Plataforma que tiene el fin de conectar personas a través de la cocina con tres objetivos muy claros: Comer, compartir y aprender.'); ?>
 
+    <!-- BANNER -->
     <section id="banner" class="container-fluid">
         <div class="row">
             <h1>Cocina experiencias</h1>
@@ -16,7 +17,7 @@
         </div>
     </section>
 
-
+    <!-- ¿QUÉ ES COOKTO? -->
     <section id="que-es-cookto" class="container-fluid">
 
         <article class="row">
@@ -38,6 +39,7 @@
 
     </section>
 
+    <!-- COMER -->
     <section id="comer" class="container-fluid">
 
         <article class="row">
@@ -58,6 +60,7 @@
 
     </section>
 
+    <!-- COMPARTIR -->
     <section id="compartir" class="container-fluid">
 
         <article class="row">
@@ -75,6 +78,7 @@
 
     </section>
 
+    <!-- APRENDER -->
     <section id="aprender" class="container-fluid">
         <article class="row">
             <div class="descripcion col-md-6 order-md-2">
@@ -91,7 +95,7 @@
         </article>
     </section>
 
-
+    <!-- FOOTER -->
    <?php get_footer(); ?>
 
    <!-- MENU LATERAL -->
