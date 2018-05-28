@@ -64,7 +64,7 @@ function get_footer()
             <div class="col-12">
                 <p>&copy; 2018- 2019 COOKTO. Todos los derechos reservados.</p>
             </div>
-            <div class="redes-sociales">
+            <div class="redes-sociales col-12">
                 <a href="">
                     <span class="icon-facebook"></span>
                 </a>

@@ -1,8 +1,9 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none !important;
   box-sizing: border-box;
   font-family: "Catamaran", sans-serif; }
 
@@ -10,9 +11,11 @@ body,
 html {
   font-size: 16px; }
 
+/* HEADER */
 header#header {
   background-color: #eeb641;
-  padding: 20px 50px; }
+  padding: 20px 50px;
+  border-bottom: 5px solid #3a3028; }
   header#header div.logo {
     padding-left: 3vmax; }
     header#header div.logo img {
@@ -53,14 +56,16 @@ header#header {
         padding: 10px 30px;
         border-radius: 20px; }
 
+/* BANNER */
 section#banner {
   width: 100%;
-  height: calc(100vh - 135px);
+  height: calc(100vh - 140px);
   background: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.302)), url(../img/banner.jpg) center center fixed no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   section#banner .row {
     display: flex;
     justify-content: center;
@@ -72,16 +77,229 @@ section#banner {
       text-shadow: 2px 2px 2px black;
       font-size: 5rem;
       letter-spacing: 5px; }
+    section#banner .row h2 {
+      color: white;
+      text-shadow: 2px 2px 2px black;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 50px; }
+    section#banner .row a {
+      color: #3a3028;
+      display: inline-block;
+      background-color: #eeb641;
+      padding: 10px 30px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1.3rem; }
+  section#banner div#buscador {
+    background: white;
+    position: absolute;
+    bottom: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #eeb641;
+    width: 35%;
+    padding: 0;
+    border-radius: 15px; }
+    section#banner div#buscador input[type="search"] {
+      border-radius: 10px 0 0 10px;
+      outline: none;
+      border: none;
+      padding: 8px 20px;
+      width: 100%;
+      font-weight: 700;
+      color: #3a3028; }
+      section#banner div#buscador input[type="search"]::placeholder {
+        color: #3a3028;
+        opacity: 0.8; }
+    section#banner div#buscador a {
+      color: #eeb641;
+      display: inline-block;
+      background-color: #3a3028;
+      padding: 12px 10px;
+      border-radius: 0 10px 10px 0;
+      font-weight: 800;
+      display: flex;
+      font-size: 1.2rem;
+      justify-content: center;
+      align-items: center; }
 
+/* ¿QUÉ ES COOKTO? */
+section#que-es-cookto {
+  background-color: white;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  section#que-es-cookto article {
+    align-items: center; }
+    section#que-es-cookto article .descripcion {
+      color: #3a3028;
+      padding-left: 125px; }
+      section#que-es-cookto article .descripcion h2 {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+        margin-bottom: 1.5rem; }
+      section#que-es-cookto article .descripcion p {
+        width: 90%;
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-align: justify;
+        text-justify: inter-word; }
+        section#que-es-cookto article .descripcion p span {
+          font-weight: 800;
+          text-transform: uppercase; }
+    section#que-es-cookto article .imagen {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      section#que-es-cookto article .imagen img {
+        max-width: 75%;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #3a3028; }
+
+/* COMER */
+section#comer {
+  background-color: #eeb641;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  section#comer article {
+    align-items: center; }
+    section#comer article .descripcion {
+      color: #3a3028; }
+      section#comer article .descripcion h2 {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+        margin-bottom: 1.5rem; }
+      section#comer article .descripcion p {
+        width: 80%;
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-align: justify;
+        text-justify: inter-word; }
+        section#comer article .descripcion p span {
+          font-weight: 800;
+          text-transform: uppercase; }
+    section#comer article .imagen {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      section#comer article .imagen img {
+        max-width: 75%;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #3a3028; }
+
+/* COMPARTIR */
+section#compartir {
+  background-color: white;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  section#compartir article {
+    align-items: center; }
+    section#compartir article .descripcion {
+      color: #3a3028;
+      padding-left: 125px; }
+      section#compartir article .descripcion h2 {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+        margin-bottom: 1.5rem; }
+      section#compartir article .descripcion p {
+        width: 90%;
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-align: justify;
+        text-justify: inter-word; }
+        section#compartir article .descripcion p span {
+          font-weight: 800;
+          text-transform: uppercase; }
+    section#compartir article .imagen {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      section#compartir article .imagen img {
+        max-width: 75%;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #3a3028; }
+
+/* APRENDER */
+section#aprender {
+  background-color: #3a3028;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  section#aprender article {
+    align-items: center; }
+    section#aprender article .descripcion {
+      color: #eeb641;
+      padding-left: 50px; }
+      section#aprender article .descripcion h2 {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+        margin-bottom: 1.5rem; }
+      section#aprender article .descripcion p {
+        width: 80%;
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-align: justify; }
+        section#aprender article .descripcion p span {
+          font-weight: 800;
+          text-transform: uppercase; }
+    section#aprender article .imagen {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      section#aprender article .imagen img {
+        max-width: 75%;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #eeb641; }
+
+/* FOOTER */
 footer {
+  padding: 50px 0;
   background-color: #eeb641; }
+  footer .row p {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem; }
+  footer .row .redes-sociales {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center; }
+    footer .row .redes-sociales a span {
+      padding: 5px;
+      font-size: 3.5rem;
+      color: #3a3028;
+      transition: all ease-in-out 0.2s; }
+      footer .row .redes-sociales a span:hover {
+        font-size: 4rem; }
+    footer .row .redes-sociales a:nth-child(2) {
+      margin: 0 4rem; }
 
 /* MEDIA QUERIES */
 /* MEDIUM */
 @media only screen and (max-width: 991px) {
   header#header nav#navegacion div.navbar-nav {
     padding: 20px 0;
-    flex-direction: row; } }
+    flex-direction: row; }
+
+  div#buscador {
+    width: 50% !important; } }
 /* SMALL */
 @media only screen and (max-width: 767px) {
   header#header {
@@ -94,6 +312,10 @@ footer {
     header#header div.logo img {
       height: 7.5vmax; }
     header#header button span {
-      font-size: 5vmax; } }
+      font-size: 5vmax; }
+
+  div#buscador {
+    font-size: 2.7vmin;
+    width: 60% !important; } }
 
 /*# sourceMappingURL=estilos.css.map */

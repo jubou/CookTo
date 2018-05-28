@@ -6,21 +6,21 @@
         <div class="row">
             <h1>Cocina experiencias</h1>
             <h2>Forma parte de ellas</h2>
-            <a href="#queescookto">Descubre más</a>
+            <a href="#que-es-cookto">Descubre más</a>
+        </div>
+        <div id="buscador" class="container">
+            <input type="search" placeholder="¿Dónde te apetece comer hoy?" name="search" id="search">
+            <a href="#">
+                <span class="icon-buscador"></span>
+            </a>
         </div>
     </section>
 
-    <section id="buscador" class="container">
-        <input type="search" name="" id="">
-        <a href="#">
-            <span class="icon-buscador"></span>
-        </a>
-    </section>
 
-    <section id="que-es-cookto" class="container">
+    <section id="que-es-cookto" class="container-fluid">
 
         <article class="row">
-            <div>
+            <div class="descripcion col-md-6">
                 <h2>¿Qué es Cookto?</h2>
                 <p>No es una página sobre gastronomía, ni tampoco un simple repositorio de recetas,
                     <span>COOKTO </span>es todo eso y más.</p>
@@ -31,17 +31,20 @@
                     <span>Comer, Compartir y Aprender</span>
                 </p>
             </div>
-            <div class="imagen-que-es-cookto">
+            <div class="imagen col-md-6">
                 <img src="img/home-cookto.jpg" alt="¿Qué es CookTo?">
             </div>
         </article>
 
     </section>
 
-    <section id="comer" class="container">
+    <section id="comer" class="container-fluid">
 
         <article class="row">
-            <div>
+            <div class="imagen col-md-6">
+                <img src="img/home-comer.jpg" alt="Comer">
+            </div>
+            <div class="descripcion col-md-6">
                 <h2>Comer</h2>
                 <p>¿Simple, no? Y así es como queremos que resulte tu experencia cuando entres aquí. Nosotros te proporcionamos
                     un buscador en el que podrás encontrar a gente de tu alrededor ofreciendo su casa y un plato de comida
@@ -51,42 +54,38 @@
                     cercana y más económica que comprar comida en la calle, y como anfitrión, dándote la posibilidad de compartir
                     los gastos de una comida más abundante.</p>
             </div>
-            <div class="imagen-comer">
-                <img src="img/home-comer.jpg" alt="Comer">
-            </div>
         </article>
 
     </section>
 
-    <section id="compartir" class="container">
+    <section id="compartir" class="container-fluid">
 
         <article class="row">
-            <div>
+            <div class="descripcion col-md-6">
                 <h2>Compartir</h2>
                 <p>Queremos que vivas momentos únicos entre personas que no se conocen previamente y en las que se puede producir
                     no solo un enriquecimiento culinario o económico, sinó también personal</p>
                 <p>Nuestro objetivo no es que este encuentro se reduzca a una simple ingesta de comida, nos encantaría que de
                     toda esta experiencia surgiesen aprendizajes, amistades y emociones.</p>
             </div>
-            <div class="imagen-compartir">
+            <div class="imagen col-md-6">
                 <img src="img/home-compartir.jpg" alt="Compartir">
             </div>
         </article>
 
     </section>
 
-    <section id="aprender" class="container">
+    <section id="aprender" class="container-fluid">
         <article class="row">
-            <div>
-                <h2>Aprender</h2>
-                <p>Conocimientos gastronómicos, tanto por un intercambio verbal de información durante la conversaciones que
-                    entre los comensales, como por el libre acceso a la enciclopedia de
-                    <span>COOKTO</span>, una base de datos construída por todos los usuarios de la comunidad, con el fin de dar
-                    a conocer: recetas, procedimientos, truquillos de cocina o información sobre la cultura castronómica
-                    del país del usuario.</p>
-            </div>
-            <div class="imagen-aprender">
+            <div class="imagen col-md-6">
                 <img src="img/home-aprender.jpg" alt="Aprender">
+            </div>
+            <div class="descripcion col-md-6">
+                <h2>Aprender</h2>
+                <p>Conocimientos gastronómicos, tanto por un intercambio verbal de información durante las conversaciones entre los comensales, como por el libre acceso a la enciclopedia de
+                    <span>COOKTO</span>, una base de datos construída por todos los usuarios de la comunidad, con el fin de dar
+                    a conocer recetas, procedimientos, truquillos de cocina o información sobre la cultura gastronómica
+                    del país del usuario.</p>
             </div>
         </article>
     </section>
