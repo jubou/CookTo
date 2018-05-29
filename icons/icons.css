@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?z9vtlv');
-  src:  url('fonts/icomoon.eot?z9vtlv#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?z9vtlv') format('truetype'),
-    url('fonts/icomoon.woff?z9vtlv') format('woff'),
-    url('fonts/icomoon.svg?z9vtlv#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?an37wd');
+  src:  url('fonts/icomoon.eot?an37wd#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?an37wd') format('truetype'),
+    url('fonts/icomoon.woff?an37wd') format('woff'),
+    url('fonts/icomoon.svg?an37wd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bebidas:before {
+  content: "\e909";
+}
+.icon-fecha:before {
+  content: "\e90a";
+}
+.icon-intolerancias:before {
+  content: "\e90b";
+}
+.icon-personas:before {
+  content: "\e90c";
+}
+.icon-precio:before {
+  content: "\e90d";
+}
+.icon-ubicacion:before {
+  content: "\e90e";
+}
 .icon-scroll-top:before {
   content: "\e900";
 }

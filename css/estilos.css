@@ -133,7 +133,10 @@ section#que-es-cookto {
   background-color: white;
   min-height: 100vh;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   section#que-es-cookto article {
     align-items: center; }
     section#que-es-cookto article .descripcion {
@@ -172,7 +175,10 @@ section#comer {
   background-color: #eeb641;
   min-height: 100vh;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   section#comer article {
     align-items: center; }
     section#comer article .descripcion {
@@ -210,7 +216,10 @@ section#compartir {
   background-color: white;
   min-height: 100vh;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   section#compartir article {
     align-items: center; }
     section#compartir article .descripcion {
@@ -247,7 +256,10 @@ section#aprender {
   background-color: #3a3028;
   min-height: 100vh;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   section#aprender article {
     align-items: center; }
     section#aprender article .descripcion {
@@ -342,7 +354,16 @@ footer {
       margin: 0 4rem; }
 
 /* MEDIA QUERIES */
-/* MEDIUM */
+/* EXTRA LARGE */
+@media only screen and (min-width: 1366px) {
+  section#banner .row h1 {
+    font-size: 7rem; }
+  section#banner .row h2 {
+    font-size: 4rem; }
+  section#banner .row a {
+    padding: 15px 35px;
+    font-size: 1.7rem; } }
+/* LARGE */
 @media only screen and (max-width: 991px) {
   /* CABECERA*/
   header#header nav#navegacion div.navbar-nav {
@@ -351,14 +372,14 @@ footer {
 
   /* BUSCADOR*/
   div#buscador {
-    width: 50% !important; } }
-/* BANNER */
-section#banner .row h1 {
-  font-size: 4rem; }
-section#banner .row h2 {
-  font-size: 1.5rem; }
+    width: 50% !important; }
 
-/* SMALL */
+  /* BANNER */
+  section#banner .row h1 {
+    font-size: 4rem; }
+  section#banner .row h2 {
+    font-size: 1.5rem; } }
+/* MEDIUM*/
 @media only screen and (max-width: 767px) {
   /* CABECERA */
   header#header {
@@ -379,12 +400,16 @@ section#banner .row h2 {
 
   /* BUSCADOR */
   div#buscador {
-    font-size: 2.7vmin;
+    font-size: 3vmin;
     width: 60% !important; }
 
   /* BANNER */
   section#banner {
     margin-top: 95px; }
+    section#banner .row h1 {
+      font-size: 3rem; }
+    section#banner .row h2 {
+      font-size: 1.3rem; }
 
   /* MENÚ LATERAL */
   #menu-lateral {
@@ -392,7 +417,7 @@ section#banner .row h2 {
 
   /* ¿QUÉ ES COOKTO? */
   section#que-es-cookto article .descripcion {
-    padding-left: 0;
+    padding-left: 15px;
     text-align: center;
     margin-bottom: 50px; }
     section#que-es-cookto article .descripcion p {
@@ -403,7 +428,8 @@ section#banner .row h2 {
   /* COMER */
   section#comer article .descripcion {
     text-align: center;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    padding-left: 15px; }
     section#comer article .descripcion p {
       text-align: center;
       width: 100%;
@@ -411,7 +437,7 @@ section#banner .row h2 {
 
   /* COMPARTIR */
   section#compartir article .descripcion {
-    padding-left: 0;
+    padding-left: 15px;
     text-align: center;
     margin-bottom: 50px; }
     section#compartir article .descripcion p {
@@ -423,7 +449,7 @@ section#banner .row h2 {
   section#aprender article .descripcion {
     text-align: center;
     margin-bottom: 50px;
-    padding-left: 0; }
+    padding-left: 15px; }
     section#aprender article .descripcion p {
       text-align: center;
       width: 100%;
@@ -432,5 +458,19 @@ section#banner .row h2 {
   /* FOOTER */
   footer .row p {
     font-size: 1.2rem; } }
+/* SMALL */
+@media only screen and (max-width: 575px) {
+  /* BUSCADOR */
+  div#buscador {
+    font-size: 3.5vmin;
+    width: 80% !important; }
+
+  /* SCROLL TO TOP */
+  .go-top {
+    bottom: 1rem;
+    right: 1rem; }
+    .go-top span {
+      padding: 10px;
+      font-size: 1.25rem; } }
 
 /*# sourceMappingURL=estilos.css.map */
