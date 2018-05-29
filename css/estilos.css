@@ -56,6 +56,7 @@ header#header {
         padding: 10px 30px;
         border-radius: 20px; }
 
+/* PÁGINAS */
 /* BANNER */
 section#banner {
   width: 100%;
@@ -291,7 +292,8 @@ section#aprender {
         padding: 10px;
         background-color: #eeb641; }
 
-/* MENÚ LATERAL*/
+/* FUNCIONALIDADES */
+/* MENÚ LATERAL */
 #menu-lateral {
   position: fixed;
   top: 33%;
@@ -353,6 +355,7 @@ footer {
     footer .row .redes-sociales a:nth-child(2) {
       margin: 0 4rem; }
 
+/* MEDIA QUERIES */
 /* MEDIA QUERIES */
 /* EXTRA LARGE */
 @media only screen and (min-width: 1366px) {
