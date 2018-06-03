@@ -2,35 +2,41 @@ $(document).ready(Inicio);
 
 function Inicio() {
 
-    // SCROLL TO TOP & MENU LATERAL
+    // MENÚ LATERAL
 
     $(window).scroll(function () {
         if ($(this).scrollTop() >
             200) {
-            $('.go-top').fadeIn(200);
+            $('#menu-lateral a').fadeIn(200);
         } else {
-            $('.go-top').fadeOut(200);
+            $('#menu-lateral a').fadeOut(200);
         }
     });
 
-    // SUBIDA Y ANIMACIÓN SCROLL TO TOP
+    //  EVENTOS
 
-    $('.go-top').click(function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, 600);
-    })
+    // HEADER
 
-    // MENÚ LATERAL
+    $("header#header nav#navegacion div.navbar-nav div a").mouseenter(AparecerIcono);
+    $("header#header nav#navegacion div.navbar-nav div a").mouseleave(DesaparecerIcono);
 
-     $(window).scroll(function () {
-         if ($(this).scrollTop() >
-             200) {
-             $('#menu-lateral a').fadeIn(200);
-         } else {
-             $('#menu-lateral a').fadeOut(200);
-         }
-     });
+}
+
+function AparecerIcono() {
+
+    $(this).children().eq(0).css("visibility", "hidden");
+    $(this).children().eq(1).css("display", "block").animate({
+        "opacity": "1"
+    });
+
+}
+
+function DesaparecerIcono() {
+
+    $(this).children().eq(0).css("visibility", "visible");
+    $(this).children().eq(1).css({
+        "opacity": "0",
+        "display": "none"
+    });
 
 }

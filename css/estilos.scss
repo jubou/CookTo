@@ -1,5 +1,10 @@
-$amarillo: #eeb641;
-$marron: #3a3028;
+
+
+// MIXINS
+@import "mixins";
+
+// COLORES
+@import "colores";
 
 // RESET
 @import "reset";
@@ -17,18 +22,16 @@ $marron: #3a3028;
 //     border: 1px solid red;
 // }
 
-/* HEADER */
+// /* HEADER */
 @import "header";
 
-/* PÁGINAS */
+// /* PÁGINAS */
 @import "paginas/home";
 @import "paginas/buscador";
+@import "paginas/search";
 
-/* FUNCIONALIDADES */
+// /* FUNCIONALIDADES */
 @import "funcionalidades";
 
-/* FOOTER */
+// /* FOOTER */
 @import "footer";
-
-/* MEDIA QUERIES */
-@import "media-queries";

@@ -1,6 +1,6 @@
 <?php include('funciones.php'); ?>
     <!-- CABECERA -->
-    <?php get_header('CookTo - Cocinar para comer, compartir y aprender sobre comida', 'Plataforma que tiene el fin de conectar personas a través de la cocina con tres objetivos muy claros: Comer, compartir y aprender.'); ?>
+    <?php get_header('CookTo - Cocinar parza comer, compartir y aprender sobre comida', 'Plataforma que tiene el fin de conectar personas a través de la cocina con tres objetivos muy claros: Comer, compartir y aprender.', ""); ?>
 
     <!-- BANNER -->
     <section id="banner" class="container-fluid">
@@ -95,5 +95,5 @@
         </article>
     </section>
 
-   <?php get_footer(); ?>
+   <?php get_footer(""); ?>
 
