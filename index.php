@@ -1,6 +1,6 @@
 <?php include('funciones.php'); ?>
     <!-- CABECERA -->
-    <?php get_header('CookTo - Cocinar parza comer, compartir y aprender sobre comida', 'Plataforma que tiene el fin de conectar personas a través de la cocina con tres objetivos muy claros: Comer, compartir y aprender.', ""); ?>
+    <?php get_header('CookTo - Cocinar para comer, compartir y aprender sobre comida', 'Plataforma que tiene el fin de conectar personas a través de la cocina con tres objetivos muy claros: Comer, compartir y aprender.', ""); ?>
 
     <!-- BANNER -->
     <section id="banner" class="container-fluid">
@@ -9,7 +9,7 @@
             <h2>Forma parte de ellas</h2>
             <a href="#que-es-cookto">Descubre más</a>
         </div>
-        <div id="buscador" class="container">
+        <div id="buscador">
             <input type="search" placeholder="¿Dónde te apetece comer hoy?" name="search" id="search">
             <a href="#">
                 <span class="icon-buscador"></span>
