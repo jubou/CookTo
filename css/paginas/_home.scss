@@ -2,7 +2,7 @@
 section#banner {
     width: 100%;
     min-height: calc(100vh - 140px);
-    background: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.302)), url(../img/banner.jpg) center center fixed no-repeat, ;
+    background: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.302)), url(../img/banner.jpg) center center fixed no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -23,6 +23,8 @@ section#banner {
             color: white;
             text-shadow: 2px 2px 2px black;
             font-size: 3rem;
+            letter-spacing: 5px;
+            text-align: center;
             @include mq(md) {
                 font-size: 4rem;
             }
@@ -32,13 +34,17 @@ section#banner {
             @include mq(xlg) {
                 font-size: 7rem;
             }
-            letter-spacing: 5px;
-            text-align: center;
+            @include mq(lscape) {
+                font-size: 3rem;
+            }
         }
         h2 {
             color: white;
             text-shadow: 2px 2px 2px black;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
             @include mq(md) {
                 font-size: 1.5rem;
             }
@@ -48,10 +54,10 @@ section#banner {
             @include mq(xlg) {
                 font-size: 4rem;
             }
-            font-size: 2rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            margin-bottom: 50px;
+            @include mq(lscape) {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
         }
         a {
             color: $marron;
@@ -71,6 +77,10 @@ section#banner {
             @include mq(xlg) {
                 padding: 15px 35px;
                 font-size: 1.7rem;
+            }
+            @include mq(lscape) {
+                padding: 5px 20px;
+                font-size: 0.9rem;
             }
             &:hover {
                 background: $marron;
@@ -322,4 +332,5 @@ section#aprender {
             }
         }
     }
-} 
+}
+

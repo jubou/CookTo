@@ -34,18 +34,17 @@ section#banner-buscador {
 
 // FILTROS
 section#filtros {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 10% 100px 10%;
     .row {
         div {
             display: flex;
             justify-content: space-around;
             align-items: center;
             padding: 0;
-            &:nth-child(2) {
-                padding: 30px 0;
+            &:nth-child(1) {
+                margin-bottom: 50px;
                 @include mq(lg) {
-                    padding: 0;
+                    margin-bottom: 0;
                 }
             }
             span {
@@ -53,10 +52,110 @@ section#filtros {
                 background: $marron;
                 color: $amarillo;
                 font-size: 3.75rem;
-                border-radius: 20px;
+                border-radius: 15px;
+                box-shadow: 0 2px 4px 0 rgba(58, 48, 40, 0.5);
                 @include mq(lg) {
-                    padding: 20px;
-                    font-size: 5rem;
+                    padding: 17.5px;
+                    font-size: 4.5rem;
+                }
+            }
+        }
+    }
+}
+
+// ANUNCIOS
+section#anuncios {
+    width: 90%;
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .row {
+        div.anuncio {
+            max-width: 300px;
+            height: 420px;
+            border-radius: 15px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            box-shadow: 0 2px 4px 0 rgba(58, 48, 40, 0.5);
+            overflow: hidden;
+            div.foto-precio {
+                border-radius: 15px 15px 0 0;
+                height: 60%;
+                background: url(../img/buscador-fondo.jpg) center center no-repeat;
+                ;
+                background-size: cover;
+                position: relative;
+                span.precio {
+                    background-color: $amarillo;
+                    color: $marron;
+                    font-weight: 800;
+                    padding: 10px;
+                    border-radius: 0 14px 0 15px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                p.titulo {
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 800;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    text-align: center;
+                    width: 100%;
+                    letter-spacing: 1px;
+                    padding: 5px 0;
+                }
+            }
+            div.reserva {
+                padding: 15px;
+                width: 100%;
+                height: 40%;
+                background-color: $amarillo;
+                div.foto-reserva {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    img.foto-perfil {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+                    a.reserva {
+                        padding: 5px 15px;
+                        color: $amarillo;
+                        font-weight: 800;
+                        background-color: $marron;
+                        border-radius: 20px;
+                        text-transform: uppercase;
+                    }
+                }
+                div.conoce-valoracion{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    p.conoce{
+                        color: $marron;
+                        font-weight: 600;
+                        margin: 10px 0;
+                        a{
+                            color: $marron;
+                            font-weight: 800;
+                        }
+                    }
+                    div.valoracion{
+                        width: 70%;
+                        padding: 10px 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        background-color: white;
+                        border-radius: 10px;
+                    }
                 }
             }
         }

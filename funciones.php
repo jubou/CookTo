@@ -46,10 +46,10 @@ function get_header($titulo, $descripcion, $nivel)
 
                 </div>
                 <div class="aprender">
-                    <a class="nav-item nav-link" href="'.$nivel.'#"><span>Aprender</span><span class="icon-aprender"></span></a>
+                    <a class="nav-item nav-link" href="'.$nivel. '#"><span>Aprender</span><span class="icon-aprender"></span></a>
 
                 </div>
-                <a class="nav-item nav-link" href="'.$nivel.'#">Acceder</a>
+                <button class="nav-item nav-link" data-toggle="modal" data-target="#accede">Acceder</button>
             </div>
         </nav>
     </header>

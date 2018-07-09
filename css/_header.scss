@@ -3,9 +3,9 @@ header#header {
     box-shadow: 0 2px 2px $marron;
     padding: 20px 20px;
     position: fixed;
-    z-index: 99;
     @include mq(md) {
-        position: static;
+        position: relative;
+        z-index: 9999;
     }
     @include mq(lg) {
         padding: 20px 30px 20px 30px;
@@ -71,7 +71,7 @@ header#header {
                     justify-content: center;
                     position: relative;
                     margin-bottom: 15px;
-                    @include mq(sm){
+                    @include mq(sm) {
                         margin-bottom: 0;
                     }
                     span:nth-child(2) {
@@ -90,7 +90,10 @@ header#header {
                     }
                 }
             }
-            &>a {
+            &>button {
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: 1px;
                 color: $marron;
                 display: inline-block;
                 background-color: $amarillo;
@@ -99,6 +102,7 @@ header#header {
                 border: 5px solid $marron;
                 font-size: 1.2rem;
                 transition: all ease-in-out 0.2s;
+                cursor: pointer;
                 &:hover {
                     background-color: $marron;
                     color: $amarillo;

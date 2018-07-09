@@ -8,20 +8,24 @@
 
 body,
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  background: linear-gradient(#fff, #ecebeb); }
+
+p {
+  margin-bottom: 0; }
 
 header#header {
   background-color: #eeb641;
   box-shadow: 0 2px 2px #3a3028;
   padding: 20px 20px;
   position: fixed;
-  z-index: 99;
   width: 100%;
   z-index: 9999;
   top: 0; }
   @media (min-width: 768px) {
     header#header {
-      position: static; } }
+      position: relative;
+      z-index: 9999; } }
   @media (min-width: 992px) {
     header#header {
       padding: 20px 30px 20px 30px; } }
@@ -92,7 +96,10 @@ header#header {
             header#header nav#navegacion div.navbar-nav div a span:nth-child(2) {
               padding: 10px;
               border-radius: 0 0 10px 10px; } }
-      header#header nav#navegacion div.navbar-nav > a {
+      header#header nav#navegacion div.navbar-nav > button {
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         color: #3a3028;
         display: inline-block;
         background-color: #eeb641;
@@ -100,8 +107,9 @@ header#header {
         border-radius: 20px;
         border: 5px solid #3a3028;
         font-size: 1.2rem;
-        transition: all ease-in-out 0.2s; }
-        header#header nav#navegacion div.navbar-nav > a:hover {
+        transition: all ease-in-out 0.2s;
+        cursor: pointer; }
+        header#header nav#navegacion div.navbar-nav > button:hover {
           background-color: #3a3028;
           color: #eeb641; }
 
@@ -140,11 +148,13 @@ section#banner {
       @media (min-width: 1500px) {
         section#banner .row h1 {
           font-size: 7rem; } }
+      @media (max-height: 450px) {
+        section#banner .row h1 {
+          font-size: 3rem; } }
     section#banner .row h2 {
       color: white;
       text-shadow: 2px 2px 2px black;
-      font-size: 1.3rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: 2px;
       margin-bottom: 50px; }
@@ -157,6 +167,10 @@ section#banner {
       @media (min-width: 1500px) {
         section#banner .row h2 {
           font-size: 4rem; } }
+      @media (max-height: 450px) {
+        section#banner .row h2 {
+          font-size: 1.5rem;
+          margin-bottom: 20px; } }
     section#banner .row a {
       color: #3a3028;
       display: inline-block;
@@ -176,6 +190,10 @@ section#banner {
         section#banner .row a {
           padding: 15px 35px;
           font-size: 1.7rem; } }
+      @media (max-height: 450px) {
+        section#banner .row a {
+          padding: 5px 20px;
+          font-size: 0.9rem; } }
       section#banner .row a:hover {
         background: #3a3028;
         color: #eeb641; }
@@ -398,6 +416,7 @@ div#buscador {
   align-items: center;
   border: 5px solid #eeb641;
   width: 80%;
+  box-shadow: 0 2px 4px 0 rgba(58, 48, 40, 0.5);
   padding: 0;
   border-radius: 15px; }
   @media (min-width: 576px) {
@@ -468,28 +487,109 @@ section#banner-buscador {
           font-size: 5rem; } }
 
 section#filtros {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding: 100px 10% 100px 10%; }
   section#filtros .row div {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0; }
-    section#filtros .row div:nth-child(2) {
-      padding: 30px 0; }
+    section#filtros .row div:nth-child(1) {
+      margin-bottom: 50px; }
       @media (min-width: 992px) {
-        section#filtros .row div:nth-child(2) {
-          padding: 0; } }
+        section#filtros .row div:nth-child(1) {
+          margin-bottom: 0; } }
     section#filtros .row div span {
       padding: 15px;
       background: #3a3028;
       color: #eeb641;
       font-size: 3.75rem;
-      border-radius: 20px; }
+      border-radius: 15px;
+      box-shadow: 0 2px 4px 0 rgba(58, 48, 40, 0.5); }
       @media (min-width: 992px) {
         section#filtros .row div span {
-          padding: 20px;
-          font-size: 5rem; } }
+          padding: 17.5px;
+          font-size: 4.5rem; } }
+
+section#anuncios {
+  width: 90%; }
+  section#anuncios h2 {
+    text-align: center;
+    margin-bottom: 50px; }
+  section#anuncios .row div.anuncio {
+    max-width: 300px;
+    height: 420px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px 0 rgba(58, 48, 40, 0.5);
+    overflow: hidden; }
+    section#anuncios .row div.anuncio div.foto-precio {
+      border-radius: 15px 15px 0 0;
+      height: 60%;
+      background: url(../img/buscador-fondo.jpg) center center no-repeat;
+      background-size: cover;
+      position: relative; }
+      section#anuncios .row div.anuncio div.foto-precio span.precio {
+        background-color: #eeb641;
+        color: #3a3028;
+        font-weight: 800;
+        padding: 10px;
+        border-radius: 0 14px 0 15px;
+        position: absolute;
+        top: 0;
+        right: 0; }
+      section#anuncios .row div.anuncio div.foto-precio p.titulo {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 800;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 100%;
+        letter-spacing: 1px;
+        padding: 5px 0; }
+    section#anuncios .row div.anuncio div.reserva {
+      padding: 15px;
+      width: 100%;
+      height: 40%;
+      background-color: #eeb641; }
+      section#anuncios .row div.anuncio div.reserva div.foto-reserva {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        section#anuncios .row div.anuncio div.reserva div.foto-reserva img.foto-perfil {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%; }
+        section#anuncios .row div.anuncio div.reserva div.foto-reserva a.reserva {
+          padding: 5px 15px;
+          color: #eeb641;
+          font-weight: 800;
+          background-color: #3a3028;
+          border-radius: 20px;
+          text-transform: uppercase; }
+      section#anuncios .row div.anuncio div.reserva div.conoce-valoracion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        section#anuncios .row div.anuncio div.reserva div.conoce-valoracion p.conoce {
+          color: #3a3028;
+          font-weight: 600;
+          margin: 10px 0; }
+          section#anuncios .row div.anuncio div.reserva div.conoce-valoracion p.conoce a {
+            color: #3a3028;
+            font-weight: 800; }
+        section#anuncios .row div.anuncio div.reserva div.conoce-valoracion div.valoracion {
+          width: 70%;
+          padding: 10px 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          background-color: white;
+          border-radius: 10px; }
 
 #menu-lateral {
   display: none; }
@@ -507,6 +607,7 @@ section#filtros {
         text-decoration: none;
         margin-top: 30px; }
         #menu-lateral a span {
+          box-shadow: 0 2px 4px 0 rgba(58, 48, 40, 0.5);
           font-size: 2.5rem;
           color: #3a3028;
           background-color: #eeb641;
@@ -516,6 +617,80 @@ section#filtros {
           #menu-lateral a span:hover {
             color: #eeb641;
             background-color: #3a3028; } }
+
+div.modal {
+  z-index: 99999; }
+  div.modal .modal-content {
+    border-radius: 20px;
+    position: relative; }
+    div.modal .modal-content .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px;
+      border-bottom: 3px solid #3a3028;
+      text-align: center; }
+      div.modal .modal-content .modal-header div.titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #3a3028; }
+        div.modal .modal-content .modal-header div.titulo h5 {
+          text-transform: uppercase;
+          font-weight: 800; }
+        div.modal .modal-content .modal-header div.titulo p {
+          margin: 10px 0; }
+      div.modal .modal-content .modal-header button {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        outline: none; }
+    div.modal .modal-content .modal-body form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #3a3028; }
+      div.modal .modal-content .modal-body form label {
+        text-transform: uppercase;
+        font-weight: 700; }
+      div.modal .modal-content .modal-body form input {
+        width: 80%;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        border: 3px solid #3a3028;
+        padding: 5px 10px;
+        outline: none; }
+        @media (min-width: 768px) {
+          div.modal .modal-content .modal-body form input {
+            width: 60%; } }
+      div.modal .modal-content .modal-body form input[type="submit"] {
+        margin-top: 10px;
+        background-color: #3a3028;
+        padding: 10px 0;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s; }
+        div.modal .modal-content .modal-body form input[type="submit"]:hover {
+          background-color: #685a4e; }
+      div.modal .modal-content .modal-body form .iniciada {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 60%;
+        display: flex;
+        justify-content: space-around; }
+        div.modal .modal-content .modal-body form .iniciada input[type="checkbox"] {
+          margin-right: 10px;
+          margin-bottom: 0; }
+        div.modal .modal-content .modal-body form .iniciada label {
+          width: 100%;
+          color: #3a3028;
+          font-size: 0.7rem;
+          margin-bottom: 0; }
 
 footer {
   padding: 50px 0;
