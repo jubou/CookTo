@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?an37wd');
-  src:  url('fonts/icomoon.eot?an37wd#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?an37wd') format('truetype'),
-    url('fonts/icomoon.woff?an37wd') format('woff'),
-    url('fonts/icomoon.svg?an37wd#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2knx5e');
+  src:  url('fonts/icomoon.eot?2knx5e#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2knx5e') format('truetype'),
+    url('fonts/icomoon.woff?2knx5e') format('woff'),
+    url('fonts/icomoon.svg?2knx5e#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-star-mitad-1:before {
+  content: "\e911";
+  color: rgb(238, 182, 65);
+}
+.icon-star-mitad-2:before {
+  content: "\e912";
+  margin-left: -1.40rem;
+  color: rgb(58, 48, 40);
+}
+.icon-star-marron:before {
+  content: "\e90f";
+  color: rgb(58, 48, 40);
+}
+.icon-star-amarilla:before {
+  content: "\e910";
+  color: #eeb641;
+}
 .icon-bebidas:before {
   content: "\e909";
 }

@@ -95,5 +95,33 @@
         </article>
     </section>
 
+    <!-- MODAL LOGIN -->
+
+    <div class="modal fade" id="accede" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="titulo">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Accede a tu cuenta</h5>
+                        <p>¿Aún no tienes una cuenta? <a href="#">Regístrate ahora.</a></p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="usuario" id="usuario">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" name="contrasena" id="contrasena">
+                        <input type="submit" value="Iniciar sesión">
+                        <div class="iniciada"><input type="checkbox" name="iniciada" id="iniciada"><label for="iniciada">Mantener sesión iniciada</label></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
    <?php get_footer(""); ?>
 

@@ -96,7 +96,10 @@ header#header {
             header#header nav#navegacion div.navbar-nav div a span:nth-child(2) {
               padding: 10px;
               border-radius: 0 0 10px 10px; } }
-      header#header nav#navegacion div.navbar-nav > a {
+      header#header nav#navegacion div.navbar-nav > button {
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         color: #3a3028;
         display: inline-block;
         background-color: #eeb641;
@@ -104,8 +107,9 @@ header#header {
         border-radius: 20px;
         border: 5px solid #3a3028;
         font-size: 1.2rem;
-        transition: all ease-in-out 0.2s; }
-        header#header nav#navegacion div.navbar-nav > a:hover {
+        transition: all ease-in-out 0.2s;
+        cursor: pointer; }
+        header#header nav#navegacion div.navbar-nav > button:hover {
           background-color: #3a3028;
           color: #eeb641; }
 
@@ -512,13 +516,13 @@ section#anuncios {
     text-align: center;
     margin-bottom: 50px; }
   section#anuncios .row div.anuncio {
-    width: 100%;
     max-width: 300px;
-    height: 375px;
-    background-color: red;
+    height: 420px;
     border-radius: 15px;
     margin: 0 auto;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px 0 rgba(58, 48, 40, 0.5);
+    overflow: hidden; }
     section#anuncios .row div.anuncio div.foto-precio {
       border-radius: 15px 15px 0 0;
       height: 60%;
@@ -530,7 +534,7 @@ section#anuncios {
         color: #3a3028;
         font-weight: 800;
         padding: 10px;
-        border-radius: 0 15px 0 15px;
+        border-radius: 0 14px 0 15px;
         position: absolute;
         top: 0;
         right: 0; }
@@ -548,16 +552,44 @@ section#anuncios {
     section#anuncios .row div.anuncio div.reserva {
       padding: 15px;
       width: 100%;
-      height: 40%; }
+      height: 40%;
+      background-color: #eeb641; }
       section#anuncios .row div.anuncio div.reserva div.foto-reserva {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center; }
         section#anuncios .row div.anuncio div.reserva div.foto-reserva img.foto-perfil {
           width: 50px;
           height: 50px;
           border-radius: 50%; }
+        section#anuncios .row div.anuncio div.reserva div.foto-reserva a.reserva {
+          padding: 5px 15px;
+          color: #eeb641;
+          font-weight: 800;
+          background-color: #3a3028;
+          border-radius: 20px;
+          text-transform: uppercase; }
+      section#anuncios .row div.anuncio div.reserva div.conoce-valoracion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        section#anuncios .row div.anuncio div.reserva div.conoce-valoracion p.conoce {
+          color: #3a3028;
+          font-weight: 600;
+          margin: 10px 0; }
+          section#anuncios .row div.anuncio div.reserva div.conoce-valoracion p.conoce a {
+            color: #3a3028;
+            font-weight: 800; }
+        section#anuncios .row div.anuncio div.reserva div.conoce-valoracion div.valoracion {
+          width: 70%;
+          padding: 10px 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          background-color: white;
+          border-radius: 10px; }
 
 #menu-lateral {
   display: none; }
@@ -585,6 +617,80 @@ section#anuncios {
           #menu-lateral a span:hover {
             color: #eeb641;
             background-color: #3a3028; } }
+
+div.modal {
+  z-index: 99999; }
+  div.modal .modal-content {
+    border-radius: 20px;
+    position: relative; }
+    div.modal .modal-content .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px;
+      border-bottom: 3px solid #3a3028;
+      text-align: center; }
+      div.modal .modal-content .modal-header div.titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #3a3028; }
+        div.modal .modal-content .modal-header div.titulo h5 {
+          text-transform: uppercase;
+          font-weight: 800; }
+        div.modal .modal-content .modal-header div.titulo p {
+          margin: 10px 0; }
+      div.modal .modal-content .modal-header button {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        outline: none; }
+    div.modal .modal-content .modal-body form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #3a3028; }
+      div.modal .modal-content .modal-body form label {
+        text-transform: uppercase;
+        font-weight: 700; }
+      div.modal .modal-content .modal-body form input {
+        width: 80%;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        border: 3px solid #3a3028;
+        padding: 5px 10px;
+        outline: none; }
+        @media (min-width: 768px) {
+          div.modal .modal-content .modal-body form input {
+            width: 60%; } }
+      div.modal .modal-content .modal-body form input[type="submit"] {
+        margin-top: 10px;
+        background-color: #3a3028;
+        padding: 10px 0;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s; }
+        div.modal .modal-content .modal-body form input[type="submit"]:hover {
+          background-color: #685a4e; }
+      div.modal .modal-content .modal-body form .iniciada {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 60%;
+        display: flex;
+        justify-content: space-around; }
+        div.modal .modal-content .modal-body form .iniciada input[type="checkbox"] {
+          margin-right: 10px;
+          margin-bottom: 0; }
+        div.modal .modal-content .modal-body form .iniciada label {
+          width: 100%;
+          color: #3a3028;
+          font-size: 0.7rem;
+          margin-bottom: 0; }
 
 footer {
   padding: 50px 0;
